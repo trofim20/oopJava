@@ -13,6 +13,10 @@ interface Positioned {
      * Текущее местоположение
      */
     Position getPosition();
+    /**
+     * Дойти до транспорта
+     * @param person
+     * */
     void moveToTransport(Person person){
 
     }

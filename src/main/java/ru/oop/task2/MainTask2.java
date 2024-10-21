@@ -32,8 +32,8 @@ public class MainTask2 {
      */
     public void moveTo(Person person, Position destination) {
         Transport transport = new MotorBike(person);
-        transport.moveToTransport(person);
-        transport.drive(destination);
-        person.walk(destination);
+        transport.moveToTransport(person);//дойти до транспорта
+        transport.drive(destination);//ехать
+        person.walk(destination);;//идти
     }
 }

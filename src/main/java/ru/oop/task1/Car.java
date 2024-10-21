@@ -4,7 +4,7 @@ package ru.oop.task1;
  * */
 public class Car {
     /**
-     * Проверяка можно ли доехать на машине до места назначения
+     * Проверка можно ли доехать на машине до места назначения
      * @param destination
      * */
     public boolean canDrive(Position destination) {
