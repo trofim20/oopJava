@@ -1,5 +1,7 @@
 package ru.oop.task2;
 
+import com.sun.jdi.connect.Transport;
+
 /**
  * <b>Задача 2:</b><br>
  * Добраться человеку до заданного места.<br>
@@ -28,5 +30,10 @@ public class MainTask2 {
      * @see Person
      * @see Position
      */
-    // TODO реализовать метод moveTo(...)
+    public void moveTo(Person person, Position destination) {
+        Transport transport = new MotorBike(person);
+        transport.moveToTransport(person);//дойти до транспорта
+        transport.drive(destination);//ехать
+        person.walk(destination);;//идти
+    }
 }
